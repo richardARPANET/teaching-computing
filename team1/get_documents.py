@@ -7,7 +7,7 @@ imdb = Imdb({'anonymize': False})
 
 def _tokenize_plot(plot):
     plot_words_unique = set(plot.split())
-    # return as a list since python cant serialize
+    # return as a list since python can't serialize
     # a set to JSON
     return list(plot_words_unique)
 
